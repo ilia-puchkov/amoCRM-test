@@ -1,11 +1,14 @@
 import React from 'react'
-import logo from './react-logo-test.svg'
+import Header from './components/Header/Header'
+import PageIntro from './components/PageIntro/PageIntro'
+import Footer from './components/Footer/Footer'
 
 export function App() {
   return (
-    <div>
-      <h1>Hello TS</h1>
-      <img src={logo} width={100} alt="logo" />
+    <div className="page">
+      <Header />
+      <PageIntro />
+      <Footer />
     </div>
   )
 }

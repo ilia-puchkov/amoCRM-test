@@ -1,0 +1,28 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Contacts/Contacts.css);
+@import url(./components/PageIntro/PageIntro.css);
+@import url(./components/Footer/Footer.css);
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:  'Montserrat', 'Inter', sans-serif;
+  background-color: #0E1014;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  
+}
+
+.page {
+  max-width: calc(1440px - 300px);
+  padding: 50px 150px 0 150px;
+}

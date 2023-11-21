@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo-block {
+  max-width: 140px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  width: 140px;
+  height: 24px;
+}
+
+.header__logo-text {
+  margin: 0;
+  margin-top: 10px;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  color: #E4E5EA;
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+}
+
+.header__navigation-button {
+  max-height: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter';
+  font-size: 16px;
+  color: white;
+}

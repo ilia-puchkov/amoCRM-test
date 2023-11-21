@@ -1,0 +1,66 @@
+.contacts {
+  margin-left: 135px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contacts__button-phone {
+  margin-right: 15px;
+  padding: 0;
+  max-height: 20px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #e4e5ea;
+}
+
+.contacts__button-phone-footer {
+  margin: 0;
+}
+
+.contacts__address {
+  margin: 0;
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #E4E5EA;
+}
+
+.contacts__button-logo {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.contacts__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contacts__button-logo-telegram {
+  background-image: url(../../images/contacts_logo_telegram.png);
+  background-repeat: no-repeat;
+}
+
+.contacts__button-logo-phone {
+  background-image: url(../../images/contacts_logo_phone.png);
+  background-repeat: no-repeat;
+}
+
+.contacts__button-logo-whatsApp {
+  background-image: url(../../images/contacts_logo_whatsApp.png);
+  background-repeat: no-repeat;
+}
+
+.contacts__button-phone:hover {
+  cursor: pointer;
+}
+
+.contacts__button-logo:hover {
+  cursor: pointer;
+}
