@@ -1,3 +1,4 @@
-# WP_ts_react_material_template
+# AmoCRM - тестовое задание вакансия Frontend developer
 
-basic setup template
+Исп.Ж Илья Пучков
+Проект размещен здесь: https://ilia-puchkov.github.io/amoCRM-test/
