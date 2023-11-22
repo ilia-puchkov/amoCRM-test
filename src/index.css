@@ -24,7 +24,7 @@
 
 .page {
   max-width: calc(1440px - 300px);
-  padding: 50px 150px 0 150px;
+  padding: 60px 150px 0 150px;
 }
 
 @media screen and (max-width: 1430px) {
@@ -37,8 +37,4 @@
   .page {
     padding: 0;
   }
-}
-
-* {
-  outline: 1px solid yellow;
 }

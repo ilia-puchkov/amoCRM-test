@@ -13,7 +13,7 @@
 
 .pageIntro__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-family: 'Inter';
   font-weight: 400;
   font-size: 48px;
@@ -42,7 +42,7 @@
 }
 
 .pageIntro__options-subtitle {
-  margin: 0;
+  margin-top: 15px;
   font-family: 'Inter';
   font-weight: 500;
   font-size: 18px;
@@ -65,12 +65,12 @@
 }
 
 .pageIntro__options-list {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .pageIntro__option {
@@ -97,7 +97,7 @@
 }
 
 .pageIntro__option-text {
-  margin: 0;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
   color: #e4e5ea;
@@ -133,12 +133,15 @@
   }
   .pageIntro__title {
     font-size: 36px;
+    margin-bottom: 25px;
   }
   .pageIntro__block-title {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
   .pageIntro__options-subtitle {
     text-align: left;
+    margin-top: 15px;
+    margin-bottom: 0;
   }
   .pageIntro__subtitle-bright {
     text-transform: lowercase;
@@ -151,6 +154,7 @@
     flex-direction: row;
     align-items: center;
     width: 140px;
+    margin-top: 15px;
   }
   .pageIntro__option-dash {
     display: block;
@@ -173,7 +177,7 @@
   }
   .pageIntro__options-list {
     gap: 0;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 60px;
   }
   .pageIntro__button {
