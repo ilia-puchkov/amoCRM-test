@@ -1,10 +1,31 @@
-import React from 'react'
-import pageOptions from './PageOptionsList'
+import React, { useState, useEffect } from 'react'
+import { pageOptions, pageOptionMobile } from './PageOptionsList'
 
 function PageIntro() {
+  const [optionsVersion, setOptionsVersion] = useState(pageOptions)
+
+  function handleShowOptions() {
+    const displaySize = window.innerWidth
+    if (displaySize > 1024) {
+      setOptionsVersion(pageOptions)
+    } else if (displaySize < 720) {
+      setOptionsVersion(pageOptionMobile)
+    }
+  }
+
+  useEffect(() => {
+    handleShowOptions()
+  }, [])
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.addEventListener('resize', handleShowOptions)
+    }, 800)
+  })
+
   return (
     <section className="pageIntro">
-      <div className="pageIntro_block-title">
+      <div className="pageIntro__block-title">
         <h1 className="pageIntro__title">
           Зарабатывайте больше <br />
           <span className="pageIntro__title-bright">с WELBEX</span>
@@ -13,19 +34,17 @@ function PageIntro() {
           Развиваем и контролируем продажи за вас
         </p>
       </div>
-      <div className="pageIntro_block-options">
+      <div className="pageIntro__block-options">
         <h2 className="pageIntro__options-subtitle">
           Вместе с
-          <span className="pageIntro__subtitle-bright">
-            &nbsp;БЕСПЛАТНОЙ &nbsp;
-          </span>
+          <span className="pageIntro__subtitle-bright">&nbsp;БЕСПЛАТНОЙ</span>
           <span className="pageIntro__subtitle-bright1">
-            КОНСУЛЬТАЦИЕЙ&nbsp;
+            &nbsp; КОНСУЛЬТАЦИЕЙ&nbsp;
           </span>
           мы дарим:
         </h2>
         <div className="pageIntro__options-list">
-          {pageOptions.map((option) => (
+          {optionsVersion.map((option) => (
             <div className="pageIntro__option" key={option.id}>
               <hr className="pageIntro__option-dash" />
               <h3 className="pageIntro__option-title">{option.title}</h3>

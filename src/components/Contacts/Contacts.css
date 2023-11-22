@@ -12,6 +12,7 @@
   background-color: transparent;
   border: none;
   font-family: 'Inter';
+  font-weight: 600;
   font-size: 16px;
   color: #e4e5ea;
 }
@@ -63,4 +64,29 @@
 
 .contacts__button-logo:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .contacts {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .contacts__button-phone {
+    margin-bottom: 8px;
+  }
+  .contacts__icons {
+    margin-bottom: 10px;
+  }
+  .contacts__address {
+    font-size: 14px;
+  }
 }

@@ -15,7 +15,9 @@ function Header() {
         <button className="header__navigation-button">Виджеты</button>
         <button className="header__navigation-button">Интеграции</button>
         <button className="header__navigation-button">Кейсы</button>
-        <button className="header__navigation-button">Сертификаты</button>
+        <button className="header__navigation-button header__navigation-mobile">
+          Сертификаты
+        </button>
       </div>
       <div className="contacts">
         <button className="contacts__button-phone">+7 555 555-55-55</button>

@@ -1,11 +1,11 @@
 .pageIntro {
-  margin-top: 90px;
+  padding-top: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.pageIntro_block-title {
+.pageIntro__block-title {
   display: flex;
   flex-direction: column;
   max-width: 370px;
@@ -15,11 +15,13 @@
   margin: 0;
   margin-bottom: 30px;
   font-family: 'Inter';
+  font-weight: 400;
   font-size: 48px;
   color: #e4e5ea;
 }
 
 .pageIntro__title-bright {
+  font-weight: 900;
   background: -webkit-linear-gradient(45deg, #fcb045, #ff3f78);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -27,11 +29,13 @@
 
 .pageIntro__subtitle {
   margin: 0;
+  max-width: 275px;
+  font-weight: 400;
   font-size: 18px;
   color: #e4e5ea;
 }
 
-.pageIntro_block-options {
+.pageIntro__block-options {
   max-width: 310px;
   display: flex;
   flex-direction: column;
@@ -40,18 +44,21 @@
 .pageIntro__options-subtitle {
   margin: 0;
   font-family: 'Inter';
+  font-weight: 500;
   font-size: 18px;
   color: #e4e5ea;
   text-align: right;
 }
 
 .pageIntro__subtitle-bright {
+  font-weight: 700;
   background: -webkit-linear-gradient(45deg, #fcb045, #fd1d1d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pageIntro__subtitle-bright1 {
+  font-weight: 700;
   background: -webkit-linear-gradient(45deg, rgba(255, 255, 0, 0.637), #fcb045);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,18 +81,24 @@
 .pageIntro__option-dash {
   margin: 0;
   width: 10px;
+  height: 1px;
   display: none;
+  margin-right: 8px;
+  background: -webkit-linear-gradient(45deg, #fcb045, #fd1d1d);
+  border: none;
 }
 
 .pageIntro__option-title {
   margin: 0;
   font-family: 'Inter';
+  font-weight: 500;
   font-size: 18px;
   color: #e4e5ea;
 }
 
 .pageIntro__option-text {
   margin: 0;
+  font-weight: 400;
   font-size: 16px;
   color: #e4e5ea;
 }
@@ -96,6 +109,7 @@
   height: 61px;
   color: #e4e5ea;
   font-family: 'Inter';
+  font-weight: 500;
   font-size: 16px;
   background-color: #4077f3;
   border: none;
@@ -105,4 +119,64 @@
 
 .pageIntro__button:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1170px) {
+  .pageIntro {
+    padding: 40px 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .pageIntro {
+    flex-direction: column;
+  }
+  .pageIntro__title {
+    font-size: 36px;
+  }
+  .pageIntro__block-title {
+    margin-bottom: 45px;
+  }
+  .pageIntro__options-subtitle {
+    text-align: left;
+  }
+  .pageIntro__subtitle-bright {
+    text-transform: lowercase;
+  }
+  .pageIntro__subtitle-bright1 {
+    text-transform: lowercase;
+  }
+  .pageIntro__option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+  }
+  .pageIntro__option-dash {
+    display: block;
+  }
+  .pageIntro__option-title {
+    font-size: 13px;
+  }
+  .pageIntro__option-text {
+    display: none;
+  }
+  .pageIntro__button {
+    margin: 0 auto;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .pageIntro {
+    background-image: url('../../images/pageIntro_background.png');
+  }
+  .pageIntro__options-list {
+    gap: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .pageIntro__button {
+    display: none;
+  }
 }
