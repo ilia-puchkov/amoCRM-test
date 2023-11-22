@@ -1,0 +1,43 @@
+.effects {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../../images/bbblurry.svg');
+  background-repeat: no-repeat;
+}
+
+.effects__redBall {
+  width: 83px;
+  height: 83px;
+  position: inherit;
+  top: 83px;
+  left: 36%;
+}
+
+.effects__purpleBall {
+  width: 60px;
+  height: 60px;
+  position: inherit;
+  top: 0px;
+  left: 60%;
+  border-radius: 50%;
+  filter: blur(4px);
+}
+
+.effects__redBall-small {
+  width: 28px;
+  height: 28px;
+  position: inherit;
+  top: 56%;
+  left: 59%;
+  filter: blur(3px);
+}
+
+@media screen and (max-width: 520px) {
+  .effects {
+    display: none;
+  }
+}

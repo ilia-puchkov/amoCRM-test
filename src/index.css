@@ -4,6 +4,7 @@
 @import url(./components/Contacts/Contacts.css);
 @import url(./components/PageIntro/PageIntro.css);
 @import url(./components/Footer/Footer.css);
+@import url(./components/Effects/Effects.css);
 
 
 .body {
@@ -19,12 +20,12 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  
 }
 
 .page {
   max-width: calc(1440px - 300px);
   padding: 60px 150px 0 150px;
+  position: relative;
 }
 
 @media screen and (max-width: 1430px) {
